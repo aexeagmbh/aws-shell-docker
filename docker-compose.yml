@@ -1,0 +1,7 @@
+aws-shell:
+  build: ./docker
+  user: uid1000
+  entrypoint: aws-shell
+  volumes:
+   - ./aws/:/home/uid1000/.aws/
+   - ./data/:/opt/code/
